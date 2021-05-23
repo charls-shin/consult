@@ -2,9 +2,9 @@
 
 
 namespace consult\controllers;
+use consult\core\Controller;
 
-
-class LoginController
+class LoginController extends Controller
 {
 	
 }

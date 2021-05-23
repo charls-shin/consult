@@ -6,8 +6,8 @@
 </head>
 
 <body id="page-top">
-	{layout_sidebar}
-	
+	{Xlayout_sidebar}
+	{layout_content}
 </body>
 
 </html>
