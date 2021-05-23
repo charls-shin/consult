@@ -20,7 +20,7 @@ class Controller
 	
 	public function layout_head($params=[])
 	{
-		$params['tilte']='test';
+		$params['hTitle']='입합상담 솔루션 관리자';
 		//return Application::$app->view->renderOnlyView("layouts/{$this->layout}/head",$params);
 		return Application::$app->view->renderOnlyView("layout_head",$params);
 	}
