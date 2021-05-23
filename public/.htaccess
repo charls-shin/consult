@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+    Options -Multiviews
+    RewriteEngine On
+    RewriteBase /consult/public
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-l
+    RewriteRule ^(.*)$ index.php?$1 [L,QSA]
+
+</IfModule>
+
+Options -Indexes
+DirectoryIndex index.php index.html index.htm

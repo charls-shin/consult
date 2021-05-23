@@ -1,0 +1,10 @@
+<IfModule mod_rewrite.c>
+  RewriteEngine on
+  RewriteRule ^$ public/ [L]
+  RewriteRule (.*) public/$1 [L]
+
+  # Block access to specific file types for these system folders
+  RewriteRule ^(core|vendor)/(.*)\.(txt|xml|md|html|yaml|yml|php|pl|py|cgi|twig|sh|bat)$ error [F]
+  # Block access to specific files in the root folder
+  RewriteRule ^(LICENSE\.txt|composer\.lock|composer\.json|\.htaccess)$ error [F]
+</IfModule>
