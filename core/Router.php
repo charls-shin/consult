@@ -48,6 +48,7 @@ class Router
 			array_pop($aUrl); // $this->>fn
 			$path=implode('/',$aUrl);
 		}
+
 		return $path;
 	}
 	
@@ -59,9 +60,13 @@ class Router
 		}else{
 			$fn=array_pop($aUrl);
 		}
+		
 		if( $fn == '' ){
 			$fn='index';
+		}else{
+			$fn=preg_replace(['/(\.htm)$/','/(\.html)$/','/(\.php)$/'],['','',''],$fn);
 		}
+		
 		return $fn;
 	}
 	
