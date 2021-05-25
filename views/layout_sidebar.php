@@ -1,11 +1,12 @@
-<ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
+<ul class="navbar-nav bg-gradient-secondary sidebar sidebar-dark accordion" id="accordionSidebar">
 	
 	<!-- Sidebar - Brand -->
 	<a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-		<div class="sidebar-brand-icon rotate-n-15">
-			<i class="fas fa-laugh-wink"></i>
+		<div class="sidebar-brand-icon">
+			<img src="https://ta.uwayapply.com/_filesave/univ_img/D888.gif?202105252259" class="img-profile rounded-circle" style="object-fit: none;object-position: left;width: 40.06px;height: 39.01px;"></img>
 		</div>
-		<div class="sidebar-brand-text mx-3">SB Admin <sup>2</sup></div>
+		
+		<div class="sidebar-brand-text mx-3">유웨이 대학교</div>
 	</a>
 	
 	<!-- Divider -->
